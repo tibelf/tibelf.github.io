@@ -1,22 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Your New Jekyll Site</title>
-    <description>Blogging about stuffs</description>
-    <link>http://your-blog-url.example.com</link>
-    <atom:link href="http://your-blog-url.example.com/feed.xml" rel="self" type="application/rss+xml" />
+    <title>zhulang technology blog</title>
+    <description>Zhulang.JD</description>
+    <link>http://tibelf.github.io</link>
+    <atom:link href="http://tibelf.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Welcome to Jekyll!</title>
+        <title>Ssh 远程登录</title>
         
         
-          <description>&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+          <description>&lt;h1&gt;SSH 远程登录&lt;/h1&gt;
+
+&lt;p&gt;我们在公司内部，应用是部署在远程服务器上的，有时候需要远程登陆到服务器上进行操作，那么就有两种方案：&lt;/p&gt;
 </description>
         
-        <pubDate>Sun, 10 Nov 2013 18:18:00 +0800</pubDate>
-        <link>http://your-blog-url.example.com/2013/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://your-blog-url.example.com/2013/welcome-to-jekyll/</guid>
+        <pubDate>Thu, 10 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://tibelf.github.io/2015/12/10/ssh-%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/</link>
+        <guid isPermaLink="true">http://tibelf.github.io/2015/12/10/ssh-%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95/</guid>
+      </item>
+    
+      <item>
+        <title>Github 博客搭建</title>
+        
+        
+          <description>&lt;hr&gt;
+
+&lt;p&gt;title:  &amp;quot;Welcome to Jekyll!&amp;quot;
+date:   2013-11-10 10:18:00&lt;/p&gt;
+
+&lt;h2&gt;description: Thriller Comedy Horror&lt;/h2&gt;
+</description>
+        
+        <pubDate>Sun, 06 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://tibelf.github.io/2015/12/06/Github-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <guid isPermaLink="true">http://tibelf.github.io/2015/12/06/Github-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      </item>
+    
+      <item>
+        <title>Mac 安装 tmux</title>
+        
+        
+          <description>&lt;h1&gt;Mac 安装 Tmux&lt;/h1&gt;
+
+&lt;h2&gt;命令行安装&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;brew install tmux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;源码安装&lt;/h2&gt;
+
+&lt;p&gt;无法自动下载源码，只能自己翻墙手动下载&lt;/p&gt;
+
+&lt;h3&gt;下载地址&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;wget http://downloads.sourceforge.net/tmux/tmux-1.5.tar.gz
+wget http://downloads.sourceforge.net/project/levent/libevent/libevent-2.0/libevent-2.0.16-stable.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;移动到Homebrew目录下&lt;/h3&gt;
+
+&lt;p&gt;mac 上执行 &lt;code&gt;brew install&lt;/code&gt; 命令会将对应的源码把放到 &lt;code&gt;/Libarary/Caches/Homebrew&lt;/code&gt; 下，所以你只需要将你下载的源码把放到这个路径下面，然后再执行一遍安装命令，它会优先查看本地是否有源码包存在，就不会去远程下载源码包，直接进入安装步骤了。&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 04 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://tibelf.github.io/2015/12/04/Mac-%E5%AE%89%E8%A3%85-Tmux/</link>
+        <guid isPermaLink="true">http://tibelf.github.io/2015/12/04/Mac-%E5%AE%89%E8%A3%85-Tmux/</guid>
+      </item>
+    
+      <item>
+        <title>Ubuntu无sudo用户</title>
+        
+        
+          <description>&lt;h1&gt;Ubuntu没有sudo账户&lt;/h1&gt;
+
+&lt;p&gt;先说下事情的经过，我原先有一个 tibelf 用户，然后是有 sudo 权限的，
+然后加了一个新的 group，然后在执行
+&lt;code&gt;sudo usermod -G group tibelf&lt;/code&gt;
+由于没有加 -a 参数，导致 tibelf 丧失了 sudo 权限，然后当前系统中已经无其他用户拥有 sudo 权限，并且你还不知道 root 的密码&lt;/p&gt;
+
+&lt;h2&gt;解决方案&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;重启 ubuntu 系统，然后选择进入 recovery mode 模式&lt;/li&gt;
+&lt;li&gt;选择 root Drop to root shell prompt 模式，这个时候你就会以 root 账户登录了 &lt;/li&gt;
+&lt;li&gt;然后使用&lt;code&gt;passwd root&lt;/code&gt;重设 root 密码&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        
+        <pubDate>Thu, 03 Dec 2015 00:00:00 +0800</pubDate>
+        <link>http://tibelf.github.io/2015/12/03/ubuntu%E6%97%A0sudo%E7%94%A8%E6%88%B7/</link>
+        <guid isPermaLink="true">http://tibelf.github.io/2015/12/03/ubuntu%E6%97%A0sudo%E7%94%A8%E6%88%B7/</guid>
       </item>
     
   </channel>

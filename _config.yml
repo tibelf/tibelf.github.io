@@ -1,12 +1,13 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: zhulang technology blog
+description: Zhulang.JD 
+meta_description: "Your New Technology Site, Blogging about stuffs"
 
 aboutPage: true
 
 markdown: redcarpet
 highlighter: pygments
 
+gems: [jekyll-paginate]
 paginate: 20
 baseurl: /
 domain_name: 'http://tibelf.github.io'
@@ -15,11 +16,11 @@ disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+url:            'http://tibelf.github.io'
+author:         'zhulang'
+authorTwitter:  ''
 
-permalink:       /:year/:title/
+permalink:       /:year/:month/:day/:title/
 
 defaults:
     -
