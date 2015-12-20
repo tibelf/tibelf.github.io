@@ -1,5 +1,5 @@
 name: zhulang technology blog
-description: Zhulang.JD 
+description: Look Listen Think @ JD 
 meta_description: "Your New Technology Site, Blogging about stuffs"
 
 aboutPage: true
@@ -12,8 +12,8 @@ paginate: 20
 baseurl: /
 domain_name: 'http://tibelf.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+disqus: true 
+disqus_shortname: 'tibelf'
 
 # Details for the RSS feed generator
 url:            'http://tibelf.github.io'
