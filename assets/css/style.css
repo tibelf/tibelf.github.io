@@ -42,6 +42,42 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .icon-twitter-circled:before { content: '\e806'; }
 .icon-facebook-rect:before { content: '\e803'; }
 
+@font-face {
+	font-family: 'font';
+		src: url('../fonts/fontawesome-webfont.eot');
+		src: url('../fonts/fontawesome-webfont.eot#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome-webfont.woff') format('woff'),
+		url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+		url('../fonts/fontawesome-webfont.svg#icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="font-"]:before, [class*=" font-"]:before {
+	font-family: "font";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+}
+.font-weibo:before { 
+   content: '\f18a'; 
+}
+.sn-weibo { 
+    background-image: url('/assets/images/icon-sn.png');
+    background-repeat: no-repeat;
+    background-size: 160px 16px;
+    background-position: -31px 2px;
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+}
+
 /* Spacing */
 .post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
 margin-bottom: 20px;
@@ -610,6 +646,9 @@ h2.month {
 }
 #sharing a.twitter {
   background: #4fafed;
+}
+#sharing a.weibo {
+  background: #E90D24;
 }
 
 #sharing a {
