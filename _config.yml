@@ -11,7 +11,7 @@ gems: [jekyll-paginate]
 paginate: 20
 baseurl: /
 domain_name: 'http://tibelf.github.io'
-google_analytics: 'UA-66144256-1'
+google_analytics: 'UA-66144256-2'
 disqus: true 
 disqus_shortname: 'tibelf'
 
