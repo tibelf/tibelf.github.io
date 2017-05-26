@@ -1,4 +1,4 @@
-#ElasticSearch API
+# ElasticSearch API
 
 ```bash
 # node info

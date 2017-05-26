@@ -1,12 +1,12 @@
-#Gitlab 的 docker 镜像制作
+# Gitlab 的 docker 镜像制作
 今天我这里来介绍下，如果制作 Gitlab 的容器镜像。
 ##基础镜像
 首先需要下载一个基础镜像，这里我选择了 centos6.7 作为我的基础镜像，当然你也可以选择更高版本的 centos ，或者是选择 ubuntu 作为你的基础镜像，镜像下载地址 [centos docker镜像](https://hub.docker.com/_/centos/)
-##Gitlab 下载
+## Gitlab 下载
 基础镜像下载好后，就需要下载 Gitlab 的rpm包了，因为受到GFW的影响，下载官方的rpm包会很慢，所以我建议大家使用国内的源来进行下载，我这里使用的是：[清华的源](http://mirror.tuna.tsinghua.edu.cn/)，我选择下载了版本为：7.13.0 的 gitlab 
-##安装Gitlab
+## 安装Gitlab
 软件下载好后，就可以开始启动容器，然后在容器中安装gitlab了。
-###启动容器
+### 启动容器
 第一步，就是启动容器，如果执行如下命令：
 
 ```
@@ -41,5 +41,5 @@ STDERR: error: "Read-only file system" setting key "net.ipv4.ip_forward"
 ```
 docker run --privileged --name gitlab -P -p 8080:80 -d -it centos:latest /sbin/init
 ```
-###安装Gitlab
+### 安装Gitlab
 其实官网有 Gitlab 的详细安装文档可以参见：[gitlab安装文档](https://about.gitlab.com/downloads)，只需要选择你的基础环境，然后就可以根据上面的指令执行安装即可。

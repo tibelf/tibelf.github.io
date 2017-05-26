@@ -1,4 +1,4 @@
-#Linux 无service命令
+# Linux 无service命令
 >/sbin/service: line 3: /etc/init.d/functions: No such file or directory
 
 看到以上错误，其实是由于没有 service 命令导致。
