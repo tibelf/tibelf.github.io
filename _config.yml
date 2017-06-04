@@ -4,7 +4,7 @@ meta_description: "Your New Technology Site, Blogging about stuffs"
 
 aboutPage: true
 
-markdown: redcarpet
+markdown: kramdown 
 highlighter: pygments
 
 gems: [jekyll-paginate]
