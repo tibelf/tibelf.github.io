@@ -9,7 +9,7 @@ highlighter: pygments
 
 gems: [jekyll-paginate]
 paginate: 20
-baseurl: /
+baseurl: "" 
 domain_name: 'http://tibelf.github.io'
 google_analytics: 'UA-66144256-2'
 disqus: true 
