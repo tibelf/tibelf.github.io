@@ -29,3 +29,16 @@
 * [load xml](https://dev.mysql.com/doc/refman/5.7/en/load-xml.html)
 * [replace](https://dev.mysql.com/doc/refman/5.7/en/replace.html)
 * [subquery](https://dev.mysql.com/doc/refman/5.7/en/subqueries.html)
+
+## DCL
+> Data Control Language
+
+### 命令集
+* grant
+* revoke
+
+## DQL
+> Data Qeury Language
+
+### 命令集
+* select 
